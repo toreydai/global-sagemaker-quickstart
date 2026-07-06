@@ -1,0 +1,7 @@
+*
+!README.md
+!LICENSE
+!CLAUDE.md
+!docs/
+!docs/*.md
+!.gitignore
