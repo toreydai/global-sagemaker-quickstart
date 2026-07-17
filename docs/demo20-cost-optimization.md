@@ -172,7 +172,7 @@ for pl in d['PriceList']:
 
 ## 实验总结
 
-本实验把「推理成本优化」从口号变成可对比的真实数据：Graviton `ml.c7g.large` 比标准 `ml.m5.large` **单价低约 24%**，但**内置 XGBoost `1.7-1` 镜像是 x86-only**，直接部署到 Graviton 会因 `exec format error` 健康检查失败——这是比"预期"更有价值的真实发现，说明 Graviton 收益的前提是**镜像本身要有 arm64 变体**（自建多架构 BYOC 镜像，或选用官方已支持 Graviton 的算法/框架容器）。同时梳理了 Inferentia（深度学习专用、需 Neuron 编译）与 Savings Plans（稳定负载再降本、需先完成选型）的适用边界，形成一份可直接给客户的选型框架。至此，从数据、训练、部署到监控、MLOps、生成式 AI 与成本优化，SageMaker 全生命周期的 20 个 Demo 完整闭环。
+本实验把「推理成本优化」从口号变成可对比的真实数据：Graviton `ml.c7g.large` 比标准 `ml.m5.large` 单价低约 24%，但内置 XGBoost `1.7-1` 镜像是 x86-only，直接部署到 Graviton 会因 `exec format error` 健康检查失败——说明 Graviton 收益的前提是镜像本身要有 arm64 变体（自建多架构 BYOC 镜像，或选用官方已支持 Graviton 的容器）。同时梳理了 Inferentia 与 Savings Plans 的适用边界，形成一份可直接给客户的选型框架。至此，SageMaker 全生命周期的 20 个 Demo 完整闭环。
 
 ---
 

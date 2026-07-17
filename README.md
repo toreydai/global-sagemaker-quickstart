@@ -83,3 +83,11 @@
 | 训练/推理示例算法 | XGBoost（内置算法，`sagemaker.image_uris.retrieve`） |
 | GenAI 示例 | JumpStart 开源 LLM（GPU 端点，注意配额与成本） |
 | S3 数据桶 | `s3://sagemaker-quickstart-${ACCOUNT_ID}-${AWS_REGION}/` |
+
+## License
+
+MIT - see the [LICENSE](LICENSE) file for details.
+
+## 免责声明
+
+本项目仅供学习与技术参考，不构成生产部署方案。运行过程中会创建 AWS 资源并产生费用，请在实验结束后及时清理。作者不对因使用本项目产生的任何费用或损失承担责任。本项目与 Amazon Web Services 无官方关联，相关服务的可用性与定价以 AWS 官方文档为准。生产环境使用前请根据实际需求进行安全评估与调整。
